@@ -1,0 +1,12 @@
+server.port: 8761
+
+eureka:
+  environment: production
+  datacenter: ca-central-1 @ aws
+  client:
+    registerWithEureka: false
+    fetch-registry: false
+
+logging.level:
+  com.netflix.eureka: OFF
+  com.netflix.discovery: OFF

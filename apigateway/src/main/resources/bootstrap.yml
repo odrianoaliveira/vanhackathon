@@ -1,0 +1,27 @@
+# Spring
+spring:
+  application:
+    name: @project.artifactId@
+    index: ${spring.application.name}
+  cloud:
+    config:
+      enabled: false
+
+security:
+  user:
+    password: bWljcm9zZXJ2aWNlc0ZUVwo=
+
+# Info
+info:
+  application:
+    groupId:  @project.groupId@
+    artifactId: @project.artifactId@
+    version: @project.version@
+    environment: ${spring.profiles.active:default}
+    apiVersion: v@skip.application.version@
+    port: 8765
+
+# Logging
+logging:
+  path: /skip/logs
+  file: ${logging.path}/application_${spring.application.index}.log
