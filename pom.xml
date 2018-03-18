@@ -392,6 +392,8 @@
         <module>apigateway</module>
         <module>vanhac-saopaulo-fair-api</module>
         <module>ordermanagement</module>
+        <module>customerManagement</module>
+        <module>catalogManagement</module>
     </modules>
 
 </project>

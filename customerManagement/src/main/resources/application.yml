@@ -27,7 +27,7 @@ spring:
       write_empty_json_arrays: false
   data:
     mongodb:
-      uri: mongodb://localhost/order
+      uri: mongodb://localhost/customer
 
 logging:
   level:
@@ -54,4 +54,4 @@ logging:
   level:
     com.netflix.discovery: 'OFF'
 
-server.port: 8181
+server.port: 8282

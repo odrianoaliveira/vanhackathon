@@ -1,8 +1,14 @@
 package com.skipthedishes.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.joda.time.DateTime;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.validation.annotation.Validated;
 
 /**
@@ -14,12 +20,11 @@ import org.springframework.validation.annotation.Validated;
 @Validated
 @NoArgsConstructor
 @Data
+@Document
 public class Product {
   @ApiModelProperty(value = "the product id")
-  private Long id;
-
-  @ApiModelProperty(value = "the product store id")
-  private Long storeId;
+  @Id
+  private String id;
 
   @ApiModelProperty(value = "the product name")
   private String name;
@@ -29,5 +34,15 @@ public class Product {
 
   @ApiModelProperty(value = "the product price")
   private Double price;
+
+  @ApiModelProperty(value = "The order creation datetime")
+  @CreatedDate
+  @JsonIgnore
+  private DateTime createdAt;
+
+  @ApiModelProperty(value = "The order last modified datetime")
+  @LastModifiedDate
+  @JsonIgnore
+  private DateTime modifiedAt;
 }
 

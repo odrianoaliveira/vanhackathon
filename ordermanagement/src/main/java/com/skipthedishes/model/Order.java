@@ -1,9 +1,14 @@
 package com.skipthedishes.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.joda.time.DateTime;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.validation.annotation.Validated;
 
 import javax.validation.Valid;
@@ -17,17 +22,17 @@ import java.util.List;
  */
 
 @Validated
-@NoArgsConstructor
 @Data
-public class Order   {
+@Document
+@JsonIgnoreProperties(value = {"createdAt", "lastUpdate"}, allowGetters = true)
+public class Order {
   @ApiModelProperty(value = "The order id")
-  private Long id;
-
-  @ApiModelProperty(value = "The order date")
-  private DateTime date;
+  @Id
+  private String id;
 
   @ApiModelProperty(value = "The customer id")
-  private Long customerId;
+  @NotEmpty
+  private String customerId;
 
   @NotNull
   @ApiModelProperty(required = true, value = "The order delivery address")
@@ -50,11 +55,15 @@ public class Order   {
   private Double total;
 
   @ApiModelProperty(required = true, value = "The order status")
-  @NotNull
   private String status;
 
-  @ApiModelProperty(value = "The order last update datetime")
-  private DateTime lastUpdate;
+  @ApiModelProperty(value = "The order creation datetime")
+  @CreatedDate
+  private DateTime createdAt;
+
+  @ApiModelProperty(value = "The order last modified datetime")
+  @LastModifiedDate
+  private DateTime lastModified;
 
 }
 

@@ -14,8 +14,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class OrderManagementApplication {
+public class CustomerManagementApplication {
     public static void main(String[] args) {
-            SpringApplication.run(OrderManagementApplication.class, args);
+            SpringApplication.run(CustomerManagementApplication .class, args);
         }
 }
