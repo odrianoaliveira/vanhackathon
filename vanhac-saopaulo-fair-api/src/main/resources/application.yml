@@ -25,8 +25,6 @@ logging:
 # Server
 server:
   port: ${info.application.port}
-  session:
-    timeout: 300
   tomcat:
     accesslog:
       enabled: true
@@ -34,30 +32,6 @@ server:
       prefix: access_log_${spring.application.index}
   compression:
     enabled: true
-
-#Routes
-zuul:
-  host:
-    connectTimeoutMillis: 5000
-    socketTimeoutMillis: 20000
-  prefix: /api
-  ignored-services: hystrix, zipkin
-
-# authentication users & roles
-# for production environment it is better to persist into a database
-# and avoid to put keys into configuration yaml and push it to git
-# I just put here cause I'm afraid about the short time for the hackathon
-auth:
-  roles:
-    - user
-    - admin
-  users:
-    - skip:
-        password: $2a$10$V9nZ9wpO/w3yha8Sv58HYO/aRnDiDPeVEBRneBCgAlZ09CnrVdKGu
-        role: consumer
-    - admin:
-        password: $2a$10$BHU9RLum3OM3Ndn9ViEk9e3vOxvlQD.SPX9sIis6aw0vFYDmvg4Iy
-        role: admin
 
 ---
 

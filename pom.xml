@@ -72,14 +72,6 @@
                 <scope>import</scope>
             </dependency>
 
-            <!-- Spring Boot -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <version>${spring-boot.version}</version>
-                <scope>test</scope>
-            </dependency>
-
             <!-- Project Reactor => Reactive Stream -->
             <dependency>
                 <groupId>io.projectreactor</groupId>
@@ -147,8 +139,13 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <artifactId>spring-cloud-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -393,6 +390,8 @@
     <modules>
         <module>eurekaserver</module>
         <module>apigateway</module>
+        <module>vanhac-saopaulo-fair-api</module>
+        <module>ordermanagement</module>
     </modules>
 
 </project>

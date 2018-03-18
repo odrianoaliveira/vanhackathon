@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/apigateway/apigateway.iml" filepath="$PROJECT_DIR$/apigateway/apigateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ordermanagement/ordermanagement.iml" filepath="$PROJECT_DIR$/ordermanagement/ordermanagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vanhac-saopaulo-fair-api/vanhac-saopaulo-fair-api.iml" filepath="$PROJECT_DIR$/vanhac-saopaulo-fair-api/vanhac-saopaulo-fair-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/vanhackathon.iml" filepath="$PROJECT_DIR$/vanhackathon.iml" />
     </modules>
   </component>

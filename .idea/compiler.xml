@@ -8,11 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="apigateway" />
         <module name="eurekaserver" />
+        <module name="ordermanagement" />
+        <module name="vanhac-saopaulo-fair-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="apigateway" target="1.8" />
-      <module name="eurekaserver" target="1.5" />
+      <module name="eurekaserver" target="1.8" />
+      <module name="ordermanagement" target="1.8" />
+      <module name="vanhac-saopaulo-fair-api" target="1.8" />
       <module name="vanhackathon" target="1.8" />
       <module name="vanhackaton" target="1.8" />
     </bytecodeTargetLevel>
