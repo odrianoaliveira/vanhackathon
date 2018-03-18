@@ -1,0 +1,557 @@
+{
+	"info": {
+		"name": "VanHackFair",
+		"_postman_id": "a8d29fea-f120-4b73-89e5-f786219b3c9f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CatalogManagement",
+			"description": "",
+			"item": [
+				{
+					"name": "createProduct",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skipisawesome",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skip",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"storeId\":\"1234\",\n\t\"name\": \"ProductA\",\n\t\"description\":\"this is the product A\",\n\t\"price\": 5.0\n}"
+						},
+						"url": {
+							"raw": "localhost:8765/api/catalogmanagement/catalog/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"catalogmanagement",
+								"catalog",
+								"product"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getProductById",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skipisawesome",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skip",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:8765/api/catalogmanagement/catalog/product/5aaec85161e0ec3dfe1ba39d",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"catalogmanagement",
+								"catalog",
+								"product",
+								"5aaec85161e0ec3dfe1ba39d"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skipisawesome",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skip",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:8765/api/catalogmanagement//catalog/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"catalogmanagement",
+								"",
+								"catalog",
+								"product"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "StoreManagement",
+			"description": "",
+			"item": [
+				{
+					"name": "createCousine",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skipisawesome",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skip",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Brazillian Barbecue\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8765/api/store-management/cousine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"store-management",
+								"cousine"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "searchText",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skipisawesome",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skip",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8765/api/store-management/cousine/search/brazil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"store-management",
+								"cousine",
+								"search",
+								"brazil"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OrderManagement",
+			"description": "",
+			"item": [
+				{
+					"name": "getOrderbyId",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skipisawesome",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skip",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "localhost:8765/api/ordermanagement/order/5aaeecc661e0ec771bb88fd9",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ordermanagement",
+								"order",
+								"5aaeecc661e0ec771bb88fd9"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "createOrder",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skipisawesome",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skip",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deliveryAddress\": \"Street B\",\n\t\"contact\": \"Adriano\",\n\t\"storeId\": 1,\n\t\"customerId\": \"5aaeb8f761e0ec22a7b68871\",\n\t\"orderItems\" : [{\n\t\t\"productId\": \"5aaec85161e0ec3dfe1ba39d\",\n\t\t\"price\": 10,\n\t\t\"quantity\": 1,\n\t\t\"total\": 10\n\t}]\n}"
+						},
+						"url": {
+							"raw": "localhost:8765/api/ordermanagement/order",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"ordermanagement",
+								"order"
+							]
+						},
+						"description": null
+					},
+					"response": []
+				},
+				{
+					"name": "patchOrderStatus",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"status\": \"cancelled\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8181/order/5aaeecc661e0ec771bb88fd9",
+							"host": [
+								"localhost"
+							],
+							"port": "8181",
+							"path": [
+								"order",
+								"5aaeecc661e0ec771bb88fd9"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CustomerManagement",
+			"description": "",
+			"item": [
+				{
+					"name": "getCustomerById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:8282/customer/5aaeb8f761e0ec22a7b68871",
+							"host": [
+								"localhost"
+							],
+							"port": "8282",
+							"path": [
+								"customer",
+								"5aaeb8f761e0ec22a7b68871"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "createCustomer",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "skipisawesome",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "skip",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\":\"aso.rio@gmail.com\",\n\t\"name\":\"Adriano Oliveira\",\n\t\"address\":\"Albert St, Ottawa, ON\",\n\t\"password\": \"password\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8765/api/customermanagement/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"api",
+								"customermanagement",
+								"customer"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CustomerManagement",
+			"description": "",
+			"item": []
+		},
+		{
+			"name": "localhost:8765/encode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phrase\":\"admin\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8765/encode",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"encode"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "8b5ef661-6408-4932-893e-580d4a06b0e3",
+					"name": "localhost:8765/encode",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"phrase\":\"skipisawesome\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8765/encode",
+							"host": [
+								"localhost"
+							],
+							"port": "8765",
+							"path": [
+								"encode"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 18 Mar 2018 13:18:36 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "0",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "X-Application-Context",
+							"value": "api-gateway:development:api-gateway",
+							"name": "X-Application-Context",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY",
+							"name": "X-Frame-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block",
+							"name": "X-XSS-Protection",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [],
+					"body": "{\"phrase\":\"skipisawesome\",\"hashedPhrase\":\"$2a$10$V9nZ9wpO/w3yha8Sv58HYO/aRnDiDPeVEBRneBCgAlZ09CnrVdKGu\"}"
+				}
+			]
+		}
+	]
+}

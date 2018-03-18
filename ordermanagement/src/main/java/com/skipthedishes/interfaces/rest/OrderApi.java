@@ -1,7 +1,10 @@
 package com.skipthedishes.interfaces.rest;
 
+import com.skipthedishes.application.CustomerNotFoundException;
+import com.skipthedishes.application.OrderNotFoundExpetion;
 import com.skipthedishes.application.OrderService;
 import com.skipthedishes.model.Order;
+import com.skipthedishes.model.OrderStatusPatch;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
@@ -74,5 +77,16 @@ public class OrderApi {
         return updateOrder
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @ApiOperation(value = "", nickname = "patchOrder", notes = "", tags = {"Order"})
+    @ApiResponses(value = {@ApiResponse(code = 200, message = "Success")})
+    @PatchMapping(value = "/{orderId}",
+            consumes = {MediaType.APPLICATION_JSON_UTF8_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    ResponseEntity<Order> patchOrderStatus(@PathVariable("orderId") String orderId, @RequestBody OrderStatusPatch orderStatusPatch) {
+
+            return service.patchStatus(orderStatusPatch, orderId)
+                    .map(ResponseEntity::ok)
+                    .orElse(ResponseEntity.notFound().build());
     }
 }

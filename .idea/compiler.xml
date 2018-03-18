@@ -12,7 +12,6 @@
         <module name="eurekaserver" />
         <module name="ordermanagement" />
         <module name="storemanagement" />
-        <module name="vanhac-saopaulo-fair-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

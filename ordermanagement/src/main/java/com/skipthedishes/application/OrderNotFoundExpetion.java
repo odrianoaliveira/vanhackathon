@@ -8,7 +8,7 @@ package com.skipthedishes.application;
 
 
 public class OrderNotFoundExpetion extends RuntimeException {
-    OrderNotFoundExpetion(Long orderId) {
+    OrderNotFoundExpetion(String orderId) {
         super("The order with id [" + orderId + "] does not exist.");
     }
 }

@@ -24,7 +24,6 @@ import java.util.List;
 @Validated
 @Data
 @Document
-@JsonIgnoreProperties(value = {"createdAt", "lastUpdate"}, allowGetters = true)
 public class Order {
   @ApiModelProperty(value = "The order id")
   @Id
@@ -55,7 +54,7 @@ public class Order {
   private Double total;
 
   @ApiModelProperty(required = true, value = "The order status")
-  private String status;
+  private OrderStatus status;
 
   @ApiModelProperty(value = "The order creation datetime")
   @CreatedDate

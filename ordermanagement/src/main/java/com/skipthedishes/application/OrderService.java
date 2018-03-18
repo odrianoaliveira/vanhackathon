@@ -3,10 +3,7 @@ package com.skipthedishes.application;
 import com.skipthedishes.infrastructure.feign.CatalogClient;
 import com.skipthedishes.infrastructure.feign.CustomerClient;
 import com.skipthedishes.infrastructure.persistence.OrderRepository;
-import com.skipthedishes.model.Customer;
-import com.skipthedishes.model.Order;
-import com.skipthedishes.model.OrderItem;
-import com.skipthedishes.model.Product;
+import com.skipthedishes.model.*;
 import feign.FeignException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -46,12 +43,25 @@ public class OrderService {
         order.getOrderItems()
                 .forEach(this::orderItemValidation);
 
+        order.setStatus(OrderStatus.INPROGRESS);
+
         return repository.save(order);
     }
 
     public Optional<Order> update(final String orderId, final Order order) {
         Optional<Order> currentOrder = Optional.ofNullable(repository.findOne(orderId));
         return currentOrder.map(o -> repository.save(order));
+    }
+
+    public Optional<Order> patchStatus(final OrderStatusPatch orderStatusPatch, final String orderId) {
+        Optional<Order> currentOrder = Optional.ofNullable(repository.findOne(orderId));
+
+        return currentOrder
+                .map(order -> {
+                    currentOrder.get().setStatus(orderStatusPatch.getStatus());
+                    return Optional.ofNullable(repository.save(currentOrder.get()));
+                })
+                .orElse(null);
     }
 
     private void orderItemValidation(final OrderItem ordetItem) {
