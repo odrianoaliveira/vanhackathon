@@ -25,23 +25,23 @@ public class OrderItem   {
   @NotNull
   private Long orderId;
 
-  @ApiModelProperty(required = true, value = "")
+  @ApiModelProperty(required = true, value = "The order item product id")
   @NotNull
   private Long productId;
 
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "The order item product")
   @Valid
   private Product product;
 
-  @ApiModelProperty(required = true, value = "")
+  @ApiModelProperty(required = true, value = "The order item price")
   @NotNull
   private Double price;
 
-  @ApiModelProperty(required = true, value = "")
+  @ApiModelProperty(required = true, value = "The order item quantity")
   @NotNull
   private Long quantity;
 
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "the oder item total")
   private Double total;
 
 }
