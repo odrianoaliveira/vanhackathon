@@ -1,0 +1,57 @@
+# Eureka
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+    preferIpAddress: true
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+# Management
+management:
+  context-path: /
+  security:
+    enabled: false
+
+spring:
+  jackson:
+    default-property-inclusion: non_null
+    date-format: com.fasterxml.jackson.databind.util.ISO8601DateFormat
+    serialization:
+      write_dates_as_timestamps: false
+      write_date_timestamps_as_nanoseconds: false
+      write_empty_json_arrays: false
+  data:
+    mongodb:
+      uri: mongodb://localhost/store
+
+logging:
+  level:
+    com.netflix.discovery: 'ERROR'
+    org.springframework.cloud: 'INFO'
+
+# Server
+server:
+  port: ${info.application.port}
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: ${logging.path}/
+      prefix: access_log_${spring.application.index}
+  compression:
+    enabled: true
+
+---
+
+spring:
+  profiles: development
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+
+server.port: 8484

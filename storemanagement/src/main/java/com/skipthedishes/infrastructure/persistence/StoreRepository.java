@@ -1,6 +1,6 @@
 package com.skipthedishes.infrastructure.persistence;
 
-import com.skipthedishes.model.Product;
+import com.skipthedishes.model.Store;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,5 +11,5 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface ProductRepository extends PagingAndSortingRepository<Product, String> {
+public interface StoreRepository extends PagingAndSortingRepository<Store, String> {
 }

@@ -394,6 +394,7 @@
         <module>ordermanagement</module>
         <module>customerManagement</module>
         <module>catalogManagement</module>
+        <module>storemanagement</module>
     </modules>
 
 </project>

@@ -1,6 +1,5 @@
 package com.skipthedishes.interfaces.rest;
 
-import com.skipthedishes.application.CustomerNotFoundException;
 import com.skipthedishes.application.OrderService;
 import com.skipthedishes.model.Order;
 import io.swagger.annotations.ApiOperation;

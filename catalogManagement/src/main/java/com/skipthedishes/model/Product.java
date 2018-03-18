@@ -19,15 +19,37 @@ import javax.validation.constraints.NotNull;
  * @author Adriano Oliveira
  */
 
+@Validated
 @NoArgsConstructor
 @Data
+@Document
 public class Product {
+  @ApiModelProperty(value = "the product id")
+  @Id
   private String id;
+
+  @ApiModelProperty(value = "the product store id")
+  @NotEmpty
   private String storeId;
+
+  @ApiModelProperty(value = "the product name")
+  @NotEmpty
   private String name;
+
+  @ApiModelProperty(value = "the product description")
+  @NotEmpty
   private String description;
+
+  @ApiModelProperty(value = "the product price")
+  @NotNull
   private Double price;
+
+  @ApiModelProperty(value = "the product creation datetime")
+  @CreatedDate
   private DateTime createdAt;
+
+  @ApiModelProperty(value = "the product last modified datetime")
+  @LastModifiedDate
   private DateTime modifiedAt;
 }
 
