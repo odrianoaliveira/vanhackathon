@@ -3,6 +3,7 @@ package com.skipthedishes.application;
 import com.skipthedishes.infrastructure.persistence.ProductRepository;
 import com.skipthedishes.model.Product;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.mongodb.core.query.TextCriteria;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -29,5 +30,11 @@ public class ProductService {
 
     public List<Product> findAll() {
         return repository.findAll();
+    }
+
+    public Optional<List<Product>> search(String searchText) {
+        TextCriteria criteria = new TextCriteria();
+        criteria.matching(searchText);
+        return repository.findBy(criteria);
     }
 }

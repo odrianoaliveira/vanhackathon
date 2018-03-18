@@ -8,6 +8,7 @@ import org.joda.time.DateTime;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.mongodb.core.index.TextIndexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.validation.annotation.Validated;
 
@@ -34,6 +35,8 @@ public class Product {
 
   @ApiModelProperty(value = "the product name")
   @NotEmpty
+  @TextIndexed
+
   private String name;
 
   @ApiModelProperty(value = "the product description")

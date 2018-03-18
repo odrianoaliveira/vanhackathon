@@ -36,6 +36,13 @@ public class CatalogApi {
         return ResponseEntity.ok(service.findAll());
     }
 
+    @GetMapping(value = "/product/search/{searchText}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Product>> search(@PathVariable String searchText) {
+        return service.search(searchText)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
     @PostMapping(value = "/product", consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Product> create(@ApiParam(value = "") @Valid @RequestBody Product product) {

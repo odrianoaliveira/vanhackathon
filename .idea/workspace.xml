@@ -2,44 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="daa713be-9710-406b-923f-d9657053eb92" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/CatalogManagementApplication.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/application/ProductService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/configuration/MongoDBConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/configuration/SwaggerDocumentationConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/infrastructure/persistence/ProductRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/rest/CatalogApi.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/web/HomeController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/model/Product.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/resources/application.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/catalogManagement/src/main/resources/bootstrap.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/customerManagement/src/main/java/com/skipthedishes/interfaces/web/HomeController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/application/ProductNotFoundException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/infrastructure/feign/CatalogClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/StoreManagementApplication.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/application/CousineService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/application/StoreService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/configuration/MongoDBConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/configuration/SwaggerDocumentationConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/infrastructure/persistence/CousineRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/infrastructure/persistence/StoreRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/interfaces/rest/CousineApi.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/interfaces/rest/StoreApi.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/interfaces/web/HomeController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/model/Cousine.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/model/Store.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/resources/application.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/storemanagement/src/main/resources/bootstrap.yml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/catalogManagement/pom.xml" afterPath="$PROJECT_DIR$/catalogManagement/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/application/OrderService.java" afterPath="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/application/OrderService.java" />
-      <change beforePath="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/infrastructure/persistence/ProductRepository.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/interfaces/rest/OrderApi.java" afterPath="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/interfaces/rest/OrderApi.java" />
-      <change beforePath="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/model/Product.java" afterPath="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/model/Product.java" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/application/ProductService.java" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/application/ProductService.java" />
+      <change beforePath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/infrastructure/persistence/ProductRepository.java" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/infrastructure/persistence/ProductRepository.java" />
+      <change beforePath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/rest/CatalogApi.java" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/rest/CatalogApi.java" />
+      <change beforePath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/model/Product.java" afterPath="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/model/Product.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,36 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StoreService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/application/StoreService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-              <folding>
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StoreApi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/interfaces/rest/StoreApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Cousine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/model/Cousine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+            <state relative-caret-position="264">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,8 +62,8 @@
       <file leaf-file-name="CousineApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/interfaces/rest/CousineApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="95">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="41" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,24 +74,11 @@
       <file leaf-file-name="CatalogApi.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/rest/CatalogApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="354">
+              <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
               <folding>
                 <element signature="e#1124#1125#0" expanded="true" />
                 <element signature="e#1183#1184#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/application/ProductService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -213,7 +141,6 @@
         <option value="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/configuration/SwaggerDocumentationConfig.java" />
         <option value="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/CustomerManagementApplication.java" />
         <option value="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/rest/HomeController.java" />
-        <option value="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/model/Product.java" />
         <option value="$PROJECT_DIR$/catalogManagement/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/infrastructure/feign/Product.java" />
         <option value="$PROJECT_DIR$/ordermanagement/src/main/java/com/skipthedishes/model/Product.java" />
@@ -233,10 +160,11 @@
         <option value="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/model/Cousine.java" />
         <option value="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/application/CousineService.java" />
         <option value="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/interfaces/rest/CousineApi.java" />
+        <option value="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/infrastructure/persistence/CousineRepository.java" />
+        <option value="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/model/Product.java" />
+        <option value="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/rest/CatalogApi.java" />
         <option value="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/application/ProductService.java" />
         <option value="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/infrastructure/persistence/ProductRepository.java" />
-        <option value="$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/infrastructure/persistence/CousineRepository.java" />
-        <option value="$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/rest/CatalogApi.java" />
       </list>
     </option>
   </component>
@@ -926,12 +854,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23484848" sideWeight="0.4917647" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4223301" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4223301" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25566342" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2977273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2977273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -964,7 +892,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.48235294" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38349515" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38349515" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32686085" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -975,7 +903,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4223301" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5176471" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25566342" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25566342" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2977273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1027,7 +955,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/rest/CatalogApi.java</url>
-          <line>41</line>
+          <line>48</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -1402,28 +1330,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/model/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/model/Store.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/interfaces/rest/StoreApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1446,6 +1356,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.10.9.RELEASE/spring-data-mongodb-1.10.9.RELEASE.jar!/org/springframework/data/mongodb/core/index/TextIndexed.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/interfaces/rest/StoreApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/application/StoreService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1457,18 +1385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/1.10.9.RELEASE/spring-data-mongodb-1.10.9.RELEASE.jar!/org/springframework/data/mongodb/core/index/TextIndexed.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/model/Cousine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        <state relative-caret-position="264">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1477,26 +1397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/interfaces/rest/CousineApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/infrastructure/persistence/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/application/CousineService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="95">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1505,27 +1407,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/infrastructure/persistence/CousineRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/infrastructure/persistence/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storemanagement/src/main/java/com/skipthedishes/application/CousineService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/application/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalogManagement/src/main/java/com/skipthedishes/interfaces/rest/CatalogApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state relative-caret-position="354">
+          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding>
             <element signature="e#1124#1125#0" expanded="true" />
             <element signature="e#1183#1184#0" expanded="true" />
