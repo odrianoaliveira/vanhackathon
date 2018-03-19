@@ -21,3 +21,7 @@ You will need to run all of the modules, all the microservices instances will re
 Following with the project I attached the postman collection and the docker-compose with MongoDB and RabbitMQ, unfortunately due to the short time I did not user the Spring Cloud Stream in order to user Publish / Subscriber event-driven pattern.    
 
 I used http basic auth that was implemented into the Zuul Server, see the postman collection. 
+
+### Source repository
+
+Following the [gihub repository](https://github.com/odrianoaliveira/vanhackathon).
