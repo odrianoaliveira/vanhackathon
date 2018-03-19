@@ -1,9 +1,20 @@
-# SkipTheDishes VanHackathon
+# Skip The Dishes - VanHackathon
 
+## Reliable and Scalable Cloud-Native Microservices
 
-## Overview
+### Overview
 
-I used the NetflixOSS with Spring Cloud.
+Stack used to built this project:
+- Netflix OSS
+  * Zuul Proxy Server
+  * Eureka Server (Service Discovery)
+  * Eureka Client
+  * Feing Client (REST Client)
+  * Ribbon (client load balancer)
+- Spring, Spring Boot and Spring Cloud
+- Java 8, Lambdas, Stream, FP and etc
+- Lombok
+- Docker
 
 Here you will find:
  - 4 (four) microservices: 
@@ -14,7 +25,7 @@ Here you will find:
  - 1 (one) Eureka Service Discovery
  - 1 (one) Zuul Proxy Server
 
-## How To Run
+### How To Run
 
 You will need to run all of the modules, all the microservices instances will registry into Eureka and the zuul server will automatically mount a route to each of the microservices.
 
